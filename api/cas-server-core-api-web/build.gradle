@@ -1,6 +1,0 @@
-
-description = "Apereo CAS Core Web APIs"
-dependencies {
-    provided project(":api:cas-server-core-api-authentication")
-}
-

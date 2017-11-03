@@ -1,5 +1,0 @@
-description = "Apereo CAS Core Events - Configuration Events"
-dependencies {
-    provided project(":core:cas-server-core-configuration")
-    provided project(":core:cas-server-core-events")
-}
