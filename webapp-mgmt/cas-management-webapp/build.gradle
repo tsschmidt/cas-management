@@ -5,6 +5,13 @@ apply plugin: "com.moowork.node"
 description = "Apereo CAS Management Web Application"
 def MAIN_CLASS = "org.apereo.cas.mgmt.web.CasManagementWebApplication"
 
+repositories {
+    mavenLocal()
+    jcenter()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://build.shibboleth.net/nexus/content/repositories/releases/' }
+}
+
 javadoc {
     enabled false
 }

@@ -1,8 +1,16 @@
 description = "Apereo CAS Management Web Application LDAP Support"
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://build.shibboleth.net/nexus/content/repositories/releases/' }
+}
+
 dependencies {
-    implementation project(":support:cas-server-support-ldap-core")
-    implementation project(":core:cas-server-core-authentication")
-    implementation project(":core:cas-server-core-configuration")
-    implementation project(":core:cas-server-core-util")
+    implementation "org.apereo.cas:cas-server-support-ldap-core:$casVersion"
+    implementation "org.apereo.cas:cas-server-core-authentication:$casVersion"
+    implementation "org.apereo.cas:cas-server-core-configuration:$casVersion"
+    implementation "org.apereo.cas:cas-server-core-util:$casVersion"
     implementation libraries.pac4j
 }
